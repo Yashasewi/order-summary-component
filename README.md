@@ -27,20 +27,23 @@ Users should be able to:
 
 ![](./screenshot.jpg)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
 ### Links
 
 - Solution URL: [https://github.com/Yashasewi/order-summary-component](https://github.com/Yashasewi/order-summary-component)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
+
+## Building your project
+
+Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+
+1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
+2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
+3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
+4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
+5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
+6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
 
 ### Built with
 
@@ -49,6 +52,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- CSS Variables
+- CSS Custom Properties
 - [Styled Components](https://styled-components.com/) - For styles
 
 **Note: These are just examples. Delete this note and replace the list above with your own choices**
@@ -60,24 +65,48 @@ Use this section to recap over some of your major learnings while working throug
 To see how you can add code snippets, see below:
 
   ```html
-  <h1>Some HTML code I'm proud of</h1>
+  <div class="info">
+                <h1 class="heading">Order Summary</h1>
+                <p class="card_info">
+                    You can now listen to millions of songs, audiobooks, and podcasts on
+                    any device anywhere you like!
+                </p>
+            </div>
   ```
   ```css
-  .proud-of-this-css {
-    color: papayawhip;
-  }
-  ```
-  ```js
-  const proudOfThisFunc = () => {
-    console.log('🎉')
-  }
+  @media screen and (max-width: 40rem) {
+    body{
+        background-image: url(./images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: auto;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+    .card{
+        width: 100%;
+        height: auto;
+        min-height: auto;
+        max-height: auto;
+    }
+    .card_content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 2rem 2rem 0rem 2rem;
+    }
+
+}
   ```
 
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
+This project is done.
 
 
 ### Useful resources
