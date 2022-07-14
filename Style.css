@@ -81,11 +81,13 @@ select {
   }
 }
  .attribution {
-    font-size: 11px;
+    color: darkgrey;
+    font-size: 8px;
     text-align: center;
+    font-weight: var(--font-weight-light);
 }
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: hsl(228, 47%, 73%);
 }
 
 * {
@@ -116,7 +118,7 @@ body{
     border-radius: 1.5rem;
     box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.151);
     /* padding: 2rem; */
-    margin: 5rem auto 0rem auto;
+    margin: 3rem auto 2rem auto;
     /* justify-content: center; */
     align-items: center;
     width: 40%;
@@ -206,44 +208,91 @@ body{
     font-size: 0.8rem;
 }
 
-.buttons{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
 
+
+.buttons{
+    margin-left: 1rem;
 }
 button{
     font-weight: var(--font-weight-light);
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    /* width: 90%; */
 }
 
 .proceed{
     border: none;
     background-color: var(--button-clr);
-    border-radius: 1.5rem;
+    border-radius: 1.2rem;
     color: white;
     padding: 0.8rem;
-    width: 100%;
     font-size: 1rem;
     font-weight: var(--font-weight-bold);
-    /* margin-bottom: 0.5rem; */
+    width: 95%;
+    min-width: 10rem;
+    margin-bottom: 0.5rem;
 }
 
 .cancel{
     border: none;
     background-color: var(--text-clr-light);
-    border-radius: 1.5rem;
+    border-radius: 1.2rem;
     color: white;
     padding: 0.8rem;
-    width: 100%;
+    width: 95%;
     font-size: 1rem;
     color: var(--text-clr);
     font-weight: var(--font-weight-bold);
     margin: 0 auto;
     margin-bottom:2rem;
-    /* margin-bottom: 0.5rem; */
+}
+
+
+.proceed:hover{
+    opacity: 0.9;
+    transform: scale(1.025);
+}
+
+.cancel:hover{
+    transform: scale(1.025);
+}
+.box a{
+    text-underline-offset: 0.24rem;
+}
+
+.box a:hover{
+    opacity: 0.8;
+    text-decoration: none;
+    transform: scale(1.02);
+}
+
+
+
+
+@media screen and (max-width: 40rem) {
+    body{
+        background-image: url(./images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: auto;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+    .card{
+        width: 100%;
+        height: auto;
+        min-height: auto;
+        max-height: auto;
+    }
+    .card_content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 2rem 2rem 0rem 2rem;
+    }
+
 }
