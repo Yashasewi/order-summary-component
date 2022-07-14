@@ -14,7 +14,6 @@
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-
 ## Overview
 
 ### The challenge
@@ -25,12 +24,16 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](Order%20summary%20card%20%E2%80%94%20Firefox%20Developer%20Edition%2014-07-2022%2022_43_54.png)
+
+### Mobile view
+
+![](./design/mobile-design.jpg)
 
 ### Links
 
 - Solution URL: [https://github.com/Yashasewi/order-summary-component](https://github.com/Yashasewi/order-summary-component)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://yashasewi.github.io/order-summary-component/](https://yashasewi.github.io/order-summary-component/)
 
 ## My process
 
@@ -64,63 +67,59 @@ Use this section to recap over some of your major learnings while working throug
 
 To see how you can add code snippets, see below:
 
-  ```html
-  <div class="info">
-                <h1 class="heading">Order Summary</h1>
-                <p class="card_info">
-                    You can now listen to millions of songs, audiobooks, and podcasts on
-                    any device anywhere you like!
-                </p>
-            </div>
-  ```
-  ```css
-  @media screen and (max-width: 40rem) {
-    body{
-        background-image: url(./images/pattern-background-mobile.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: auto;
-        height: auto;
-        padding: 0;
-        margin: 0;
-    }
-    .card{
-        width: 100%;
-        height: auto;
-        min-height: auto;
-        max-height: auto;
-    }
-    .card_content{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: auto;
-        padding: 2rem 2rem 0rem 2rem;
-    }
+```html
+<div class="info">
+  <h1 class="heading">Order Summary</h1>
+  <p class="card_info">
+    You can now listen to millions of songs, audiobooks, and podcasts on any
+    device anywhere you like!
+  </p>
+</div>
+```
 
+```css
+@media screen and (max-width: 40rem) {
+  body {
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+  .card {
+    width: 100%;
+    height: auto;
+    min-height: auto;
+    max-height: auto;
+  }
+  .card_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 2rem 2rem 0rem 2rem;
+  }
 }
-  ```
-
+```
 
 ### Continued development
 
 This project is done.
-
 
 ### Useful resources
 
 - [CssGrid](https://www.example.com) - This helped me for fixing css grid issues.
 - [W3 Schools](https://www.w3schools.com/css/) - This is an amazing article which helped me finally understand Css. I'd recommend it to anyone still learning this concept.
 
-
 ## Author
 
-- Website - [Live Url](https://yashasewi.github.io/order-summary-component/)
+- Website - [Live Url](https://yashasewi.github.io/order-summary-component//)
 - Frontend Mentor - [@Yashasewi](https://www.frontendmentor.io/profile/Yashasewi)
 - Twitter - [@yashasewi](https://twitter.com/yashasewi)
-
 
 ## Acknowledgments
 
